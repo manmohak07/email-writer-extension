@@ -1,0 +1,47 @@
+.tone-dropdown-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.tone-dropdown {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  background-color: #f8f9fa;
+  color: #202124;
+  font-size: 14px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.tone-dropdown:hover {
+  background-color: #f1f3f4;
+  border-color: #c6c6c6;
+}
+
+.tone-dropdown:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 1px rgba(26, 115, 232, 0.2);
+}
+
+/* Match Gmail's dark mode if user has it enabled */
+@media (prefers-color-scheme: dark) {
+  .tone-dropdown {
+    background-color: #303134;
+    color: #e8eaed;
+    border-color: #5f6368;
+  }
+  
+  .tone-dropdown:hover {
+    background-color: #3c4043;
+    border-color: #9aa0a6;
+  }
+  
+  .tone-dropdown:focus {
+    border-color: #8ab4f8;
+    box-shadow: 0 0 0 1px rgba(138, 180, 248, 0.2);
+  }
+}
