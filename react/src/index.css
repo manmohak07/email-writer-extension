@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Improve focus outline for accessibility */
+:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.dark-mode :focus {
+  outline-color: #60a5fa;
+}
+
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+.MuiContainer-root,
+.MuiPaper-root,
+.MuiButton-root,
+.MuiIconButton-root,
+.MuiTypography-root,
+.MuiInputBase-root,
+.MuiFormLabel-root,
+.MuiSelect-root,
+.MuiOutlinedInput-root {
+  transition: all 0.3s ease;
+}
+
+
+::selection {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: inherit;
+}
+
+.dark-mode ::selection {
+  background-color: rgba(96, 165, 250, 0.3);
+}
+
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.MuiContainer-root {
+  transition: all 0.3s ease;
+}
+
+.MuiPaper-root {
+  transition: all 0.3s ease;
+}
+
+.MuiButton-root {
+  transition: all 0.3s ease;
+}
+
+.MuiTypography-root, .MuiInputBase-root, .MuiFormLabel-root, .MuiSelect-root {
+  transition: color 0.3s ease;
+}
+
