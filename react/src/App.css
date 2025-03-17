@@ -1,0 +1,95 @@
+.app-title {
+  background: linear-gradient(45deg, #2563eb, #4f46e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  letter-spacing: -0.5px;
+}
+
+.dark-mode .app-title {
+  background: linear-gradient(45deg, #60a5fa, #818cf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.copy-success {
+  animation: pulse 0.5s ease;
+}
+
+.MuiPaper-root,
+.MuiButton-root,
+.MuiIconButton-root,
+.MuiTypography-root,
+.MuiInputBase-root,
+.MuiFormLabel-root,
+.MuiSelect-root,
+.MuiOutlinedInput-root {
+  transition: all 0.3s ease !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb !important;
+  border-width: 2px !important;
+}
+
+.dark-mode .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #60a5fa !important;
+}
+
+.MuiButton-contained:not(.Mui-disabled) {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.MuiButton-contained:not(.Mui-disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-mode .MuiButton-contained:not(.Mui-disabled):hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4) !important;
+}
+
