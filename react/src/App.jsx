@@ -359,7 +359,6 @@ function App() {
         >
           <Container maxWidth="md">
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-              {/* Footer content can be added here if needed */}
             </Box>
           </Container>
         </Box>
