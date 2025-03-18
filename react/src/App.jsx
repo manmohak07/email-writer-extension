@@ -196,7 +196,7 @@ function App() {
                       bgcolor: mode === 'light' ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.1)',
                     }
                   }}
-                  onClick={() => window.open('https://github.com', '_blank')}
+                  onClick={() => window.open('https://github.com/manmohak07/email-writer-extension', '_blank')}
                 >
                   <GitHubIcon />
                 </IconButton>
